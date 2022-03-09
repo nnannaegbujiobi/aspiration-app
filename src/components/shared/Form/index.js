@@ -9,7 +9,7 @@ import Card from '@mui/material/Card';
 
 
 
-// hooks directory
+
 function useRelatedTopic(controlledTopic = '') {
     const [topic, setTopic] = useState(controlledTopic);
     const [results, setResults] = useState({relatedTopics: []});
@@ -29,7 +29,7 @@ function useRelatedTopic(controlledTopic = '') {
     return {topic, setTopic, ...results, loading}
 }
 
-// components directory
+
 function RelatedTopic({topic}) {
     const {stargazerCount} = useRelatedTopic(topic);
     return (
